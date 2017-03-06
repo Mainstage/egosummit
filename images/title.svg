@@ -1,0 +1,47 @@
+
+<svg width="437px" height="135px" viewBox="21 23 437 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Title" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(104.000000, 25.000000)" font-weight="normal">
+        <g filter="url(#filter-1)">
+            <text id="SUMMIT" stroke="#464646" font-family="LaoMN, Lao MN" font-size="65" fill="#464646">
+                <tspan x="0" y="63">SUMMIT</tspan>
+            </text>
+            <text id="Evil-Genius-Organiza" font-family="LaoMN, Lao MN" font-size="18" fill="#757575">
+                <tspan x="0" y="95">Evil Genius Organization</tspan>
+            </text>
+            <text id="17" font-family="BrushScriptMT, Brush Script MT" font-size="103" font-style="italic" fill="#F07F7F">
+                <tspan x="267" y="92">17</tspan>
+            </text>
+        </g>
+    </g>
+    <g id="EGO" filter="url(#filter-2)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(27.000000, 34.000000)">
+        <path d="M29.2818428,54.2326612 L29.3961584,50.1783739 C-9.54680962,30.5785599 29.2185643,16.2991292 29.2185643,16.2991292 L29.2185643,12.2596409 L29.218175,12.2598744 C29.218175,12.2598744 29.218175,12.2432604 29.2185643,12.1941786 L29.2185643,11.8688193 C29.1965927,11.3961637 28.9995487,10.7063718 28.1083388,10.7063718 C28.021564,10.7063718 27.6131934,10.8666509 27.5441631,10.8635559 C18.4158123,14.4618006 -17.9539982,31.2718425 27.5986229,55.6255749 C27.6574938,55.6170028 28.0776934,55.7824814 28.1658644,55.7824814 C28.9890892,55.7824814 29.2200162,55.1939155 29.2677749,54.7315902 L29.2770845,54.4014172 C29.2757006,54.2676742 29.2757006,54.2289788 29.2757006,54.2289788 L29.2818428,54.2326612 Z" id="Combined-Shape" fill="#464646"></path>
+        <polygon id="Path-4" fill="#464646" points="9.27178876 29.3980212 29.416276 29.3980212 29.4159868 34.278694 9.61010804 34.278694"></polygon>
+        <g id="Group" transform="translate(35.951327, 10.641593)" fill="#464646">
+            <path d="M0.30802286,43.7206863 L0.193442985,39.6570247 C39.136411,20.0572108 0.371037029,5.77778 0.371037029,5.77778 L0.371037029,1.73102158 L0.374877288,1.73332393 C0.374877288,1.73332393 0.374877288,1.67637759 0.372406587,1.46187962 C0.367051108,0.996934939 0.514734915,0.179821343 1.48471351,0.179821343 C1.56473766,0.179821343 1.91826708,0.316132738 2.02692869,0.334913928 C11.1257459,3.91818074 47.5845372,20.7386526 1.97205443,45.114341 C1.87043506,45.1291515 1.5057542,45.2703167 1.42431773,45.2703167 C0.598507839,45.2703167 0.36872147,44.6780487 0.32196272,44.2150739 L0.313010831,43.8975884 C0.314481516,43.7571105 0.314481516,43.7168142 0.314481516,43.7168142 L0.30802286,43.7206863 Z" id="Combined-Shape"></path>
+            <path d="M0.381202738,4.9748995 L0.317442795,19.0679289 C0.317442795,19.0679289 0.111748722,24.1564424 5.40595634,24.1564424 C10.700164,24.1564424 19.7179019,24.2421133 19.7179019,24.2421133 L19.7179019,19.4954424 L8.45080062,19.4954424 L6.82922407,19.4954424 C6.82922407,19.4954424 4.79961263,19.4143329 4.79961263,17.4658309 C4.79961263,15.5173289 4.79961263,4.45388952 4.79961263,4.45388952 L0.381202738,4.9748995 Z" id="Path-2"></path>
+        </g>
+        <circle id="Oval" stroke="#464646" stroke-width="5" cx="32.4512607" cy="32.5487393" r="32.4512607"></circle>
+    </g>
+</svg>

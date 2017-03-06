@@ -1,0 +1,21 @@
+{
+  "name": "EGO Summit",
+  "description": "EGO Summit",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "2.x",
+    "jquery-ui": "latest"
+  },
+  "authors": [
+    "tyler.gary <tyler.gary@appdynamics.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
