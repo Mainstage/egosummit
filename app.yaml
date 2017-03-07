@@ -1,0 +1,6 @@
+runtime: nodejs
+env: flex
+api_version: 1
+
+skip_files:
+ - ^node_modules$

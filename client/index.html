@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height">
+    <meta charset="UTF-8">
+    <title>EGO Summit</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+</head>
+<body >
+    <div id="loginbox">
+        <script type="application/javascript">
+            function setCookie(cname, cvalue, exdays) {
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays*24*60*60*1000));
+                var expires = "expires="+ d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for(var i = 0; i <ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            function enterPassword() {
+                var passbox = document.getElementById("password");
+                var password = passbox.value;
+
+                if (password === "donkeyparty") {
+                    closeLogin();
+                } else {
+                    alert("Incorrect Password");
+                }
+            }
+
+            function closeLogin() {
+                var box = document.getElementById("loginbox");
+                box.remove();
+                var main = document.getElementById("main");
+                main.className = "";
+                setCookie("loggedin", true, 1);
+            }
+
+            function clearLogin() {
+                setCookie("loggedin", false, 1);
+            }
+
+            window.onload = function(){
+                document.getElementsByClassName('submit_on_enter')[0].onkeydown = function(event) {
+                    // enter has keyCode = 13, change it if you want to use another button
+                    if (event.keyCode == 13) {
+                        enterPassword();
+                        return false;
+                    }
+                };
+                
+                if (getCookie("loggedin") === "true") {
+                    closeLogin()
+                }
+            };
+
+
+        </script>
+        <div class="password">
+            Password:
+            <input id="password" class="submit_on_enter" type="password" onsubmit="enterPassword()">
+            <input type="submit" class="btn btn-smaller" onclick="enterPassword()"/>
+        </div>
+
+    </div>
+    <main id="main" class="hidden">
+        <article
+                style="position: relative;
+                       padding-bottom: 1.5rem;">
+
+            <header class="box">
+                <img src="images/title.svg" class="title-icon">
+
+                <h3 style="font-size: medium; font-style: italic;">
+                    Congratulations! You've received an exclusive invitation to register for the 1st Annual Evil Geniuses Organization (EGO) Summit.
+                    <br/><br/>
+                    Pitch your plot for world domination to the most distinguished villains of our time. Henchmen will select our EGO leader.  Be part of  determining our domination direction.
+                    <br/><br/>
+                    Your registration fee allows us to provide:  dinner, high quality cocktails, and beer. Please bring all other favorite evil substances.
+                    <br/><br/>
+                    The EGO Summit will provide an open space for you to show off your cleverness to other participants. Possible workshops topics could include Anvil Dropping 101 or Honing Your Maniacal Laugh!
+                </h3>
+
+                <h3>
+                    Tickets: $15
+                    <br/>
+                    March 25th, 2017, 6 PM - 4 AM
+                    <br/>
+                    Mutual Destruction Assured
+                    <br/>
+                    Donkey Hidden Lair, Moon Base 5-C
+                </h3>
+
+                <a href="https://www.picatic.com/egosummit" class="btn btn-main">Buy Tickets Now</a>
+            </header>
+        </article>
+
+        <article class="section">
+           <h2>
+               Manevolent Speakers
+           </h2>
+
+            <ul class="speaker-list">
+                <li style="max-width: 300px">
+                    <img class="speaker-img" src="images/doctoreggman.png">
+                    <h3>
+                        Doctor Eggman
+                    </h3>
+                    <p style="max-width: 300px">
+                        は架空のビデオゲームのキャラクターであり、セガによって作成されたソニック・ザ・ヘッジホッグシリーズの主なアンタゴニストです。
+                    </p>
+                    <h4 style="max-width: 300px">
+                        Talk:
+                        <a href="#">Chaos Emeralds</a>
+                    </h4>
+                </li>
+                <li>
+                    <img class="speaker-img" src="images/brain.jpg">
+                    <h3>
+                        The Brain
+                    </h3>
+                    <p style="max-width: 300px">
+                        Brain sees his inevitable rise to power as good for the world, and not mere megalomania. "We're on our way to fame, fortune and a world that's a better place for all."
+                    </p>
+                    <h4 style="max-width: 300px">
+                        Talk:
+                        <a href="#">Biological Recombinant Algorithmic Intelligence Nexus</a>
+                    </h4>
+                </li>
+                <li style="max-width: 300px">
+                    <img class="speaker-img" src="images/chaos.jpg">
+                    <h3>
+                        Professor Chaos
+                    </h3>
+                    <p style="max-width: 300px">
+                        Will Professor Chaos' latest plot succeed and be the final undoing of Earth?
+                    </p>
+                    <h4 style="max-width: 300px">
+                        Talk:
+                        <a href="#">Destroying the atmosphere with Aerosol</a>
+                    </h4>
+                </li>
+                <li>
+                    <img class="speaker-img" src="images/lex.jpg">
+                    <h3>
+                        Lex Luther
+                    </h3>
+                    <p style="max-width: 300px">
+                        A power-mad American billionaire, business magnate, inventor, scientist, philanthropist to the city of Metropolis, and one of the most intelligent people in the world.
+                    </p>
+                    <h4 style="max-width: 300px">
+                        Talk:
+                        <a href="#">Outsmarting your enemies.</a>
+                    </h4>
+                </li>
+            </ul>
+        </article>
+
+
+        <article class="section about">
+            <div class="about-box">
+                <h2>
+                     About EGO Summit 17
+                </h2>
+                <p>
+                    The EGO Summit is invitation only. Want your henchmen to attend with you? Send us their email addresses and a short description of their role in your evil plot.
+                </p>
+            </div>
+
+            <section class="divider">
+                <img src="images/alcohol.jpg" class="divider-image">
+
+                <div class="divider-content">
+                    <h3>Make Your Own Demise™ Bar</h3>
+                    <p>
+                        Since quality liquor is an important part in any evil genius brainstorming session, we'll be providing three signature cocktails as well as a keg of beer.
+                    </p>
+                    <p>
+                        The Maniacal Mule is the first cocktail for your demise. A green chile vodka base topped with unethically sourced ginger beer. The Nemesis Negroni follows with the triple combo of Gin, Amaro, and Vermouth. Finally, the tried and true Gimlet for the gangsters and tricksters.
+                    </p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <img src="images/humancuts.jpg" class="divider-image">
+
+                <div class="divider-content">
+                    <h3>The Meat of Your Enemies</h3>
+                    <p>
+                        Our Hate inspired menu brings you the bona-fide top grade meat of your enemies.  Dinner will be served promply at 7.
+                    </p>
+                    <p>
+                        <b>Menu:</b><br/>
+                        Bacon Cheeseburgers - Featuring 100% Vegan Fed Pacifist Patty<br/>
+                        Buttermilk Fried "Hippie" Chicken<br/>
+                        Fresh Fries<br/>
+                        Sides and Salad<br/>
+                        <br/>
+                        Oh you know that deep fryer will be going too...  Tasty...
+                    </p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <img src="images/speaker.png" class="divider-image">
+
+                <div class="divider-content">
+                    <h3>Come Dressed to Impress</h3>
+                    <p>
+                        All of the top maniacal minds of this century will be there!  So bring your best evil genius spandex-laced costumes and destruction devices.
+                        <br/><br/>
+                        We reserve the right to refuse service to pacifists and hippies
+                    </p>
+                </div>
+            </section>
+            
+        </article>
+
+
+        <article class="section" style="text-align: center;">
+            <a href="https://www.picatic.com/egosummit" class="btn">
+                Buy Tickets Now
+            </a>
+        </article>
+    </main>
+</body>
+</html>
